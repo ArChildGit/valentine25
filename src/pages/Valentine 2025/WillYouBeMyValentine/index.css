@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.valentine-title {
+  font-family: "Great Vibes", cursive; /* Romantic red */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.valentine-button {
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(255, 120, 150, 0.3);
+  transition: all 0.3s;
+}
+
+.valentine-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(255, 120, 150, 0.5);
+}
+
+.valentine-button.no:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(255, 120, 150, 0.5);
+}
+
+.valentine-button.no:hover::before {
+  content: "💕 Ngapain sih nyoba mencet ini? YES 💕" !important;
+}
+
+.valentine-button.no::before {
+  content: "💔 No 💔";
+}
